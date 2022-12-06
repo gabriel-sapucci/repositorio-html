@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"Open Sans";
+    src: url('/fonte/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+header {
+    min-height: 60px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.493);
+}
+
+img#logo-header, nav, nav > a {
+    display: inline-block;
+}
+
+img#logo-header {
+    width: 175px;
+}
+
+nav {
+    position: absolute;
+    width: 64%;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+}
+
+nav > a.link-interno {
+    padding:10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+header > nav > a.link-interno:hover {
+    background-color: rgba(0, 0, 0, 0.315)
+}
+
+#img-principal {
+    width: 100%;
+}
+
+article{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+article h1 {
+    font-family:'Anek Devanagari', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+article h2{
+    font-family:'Anek Devanagari', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
+    margin-bottom: 50px;
+}
+
+#separador-apresentacao {
+    display: block;
+    height: 0.5px;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+#p-apresentacao {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#p-mapa {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#mapa-estados {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: black;
+
+}
+
+#lista-1, ul#lista-1 > li {
+    display: inline-block;
+}
+
+div#div-lista-1 {
+    text-align: center;
+}
+
+#lista-1 > li{
+    padding: 6px;
+}
+
+div.img-footer {
+    transition-duration: 0.5s;
+    width: 22px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#img-links-rs {
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+}
+
+div.img-footer:hover {
+    background-color: rgba(255, 255, 255, 0.411);
+}
+
+#div-lista-2 {
+    text-align: center;
+}
+
+#lista-2 > li, .separador-lista-2 {
+    display: inline-block;
+}
+
+#lista-2 > li {
+    padding: 0px 10px;
+}
+
+#lista-2 > li > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.separador-lista-2 {
+    background-color: rgba(255, 255, 255, 0.267);
+    width: 0.5px;
+    height: 0.9em;
+}
+
+#lista-2 > li > a:hover {
+    color: rgba(255, 255, 255, 0.411);
+}
+
+footer > p {
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+#div-final {
+    margin-top: -20px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
