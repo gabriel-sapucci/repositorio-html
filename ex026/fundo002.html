@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste 4 de imagem</title>
+    <title>Teste de imagem de fundo</title>
     <style>
-        body{
-            height: 95vh;
-            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
-            background-size: 100px;
-            background-repeat: no-repeat;
-            background-position: center center;
+        #container {
+            background-image: url('../ex026/imagens/target001.png');
+            background-size: 100% 100%;
+            height: 500px;
+            position: relative;
+            background-color: purple;
+            padding: 20px;
         }
+
+        #item {
+            background-image: url('../ex026/imagens/target001.png');
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
     </style>
 </head>
 <body>
-
+    <div id="container">
+        <div id="item"></div>
+    </div>
 </body>
 </html>
