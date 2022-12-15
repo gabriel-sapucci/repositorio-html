@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando form + JS</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form>
+        <p>
+            <label for="iano">Ano que nasceu</label>
+            <input oninput="calculo_idade()" type="number" min="1922" max="2022" name="ano" id="iano">
+        </p>
+        <p>
+            <label for="iidade">Sua idade: </label>
+            <output id="iidade"></output>
+        </p>
+    </form>
+    <script>
+        function calculo_idade() {
+            var ano = new Date().getFullYear()
+            var num = document.getElementById('iano').value
+            var result = ano - num
+            iidade.innerHTML = `${result} anos`
+        }
+    </script>
+</body>
+</html>
