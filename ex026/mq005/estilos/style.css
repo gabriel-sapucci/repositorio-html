@@ -80,3 +80,22 @@ article > p {
     margin-bottom: 10px;
     text-indent: 20px;
 }
+
+@media screen and (min-width:768px) {
+    #itens {
+        display: block;
+    }
+
+    span.material-symbols-outlined {
+        display: none;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        max-width: 768px;
+    }
+
+}
