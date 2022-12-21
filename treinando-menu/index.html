@@ -10,12 +10,10 @@
 <body onresize="mudouTamanho()">
     <header>
         <h1>Logo</h1>
-        <div id="container-menu">
-            <div id="menu" onclick="clickMenu()">
-                <div id="barra-1"></div>
-                <div id="barra-2"></div>
-                <div id="barra-3"></div>
-            </div>
+        <div id="menu" onclick="clickMenu()">
+            <div id="barra-1"></div>
+            <div id="barra-2"></div>
+            <div id="barra-3"></div>
         </div>
         <nav id="navbar">
             <ul>
@@ -39,10 +37,33 @@
         function clickMenu() {
             if (navbar.style.display == 'none') {
                 navbar.style.display = 'block'
+                const sheet = new CSSStyleSheet()
+                sheet.insertRule(`#barra-1 {top: 16px; left: 5px; transform: rotate(-45deg); transition: 0.5s;}`)
+                const sheet_2 = new CSSStyleSheet()
+                sheet.insertRule(`#barra-2 {display:none;}`)
+                const sheet_3 = new CSSStyleSheet()
+                sheet.insertRule(`#barra-3 {top: 16px; left: 5px; transform: rotate(45deg); transition: 0.5s;}`)
+                document.adoptedStyleSheets = [sheet,sheet_2,sheet_3]
             } else {
                 navbar.style.display = 'none'
+                const sheet = new CSSStyleSheet()
+                sheet.insertRule(`#barra-1 {left: 5px;top: 8.6px; transition: 0.5s;}`)
+                const sheet_2 = new CSSStyleSheet()
+                sheet.insertRule(`#barra_2 {display:block}`)
+                const sheet_3 = new CSSStyleSheet()
+                sheet.insertRule(`#barra-3 {left: 5px;bottom: 8.6px; transition: 0.5s;}`)
+                document.adoptedStyleSheets = [sheet,sheet_2,sheet_3]
             }
         }
+
+        function addStyle() {
+  const sheet = new CSSStyleSheet();
+  sheet.insertRule(`h1 {
+    background: pink;
+    text-transform: uppercase;
+  }`);
+  document.adoptedStyleSheets = [sheet];
+}
 
     </script>
 </body>

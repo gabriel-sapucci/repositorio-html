@@ -28,6 +28,7 @@ div#menu {
     display: none;
     position: relative;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #barra-1 {
@@ -100,6 +101,12 @@ div#menu {
 }
 
 @media screen and (max-width:550px) {
+
+    header > h1 {
+        display: block;
+        margin: auto;
+    }
+
     div#menu {
         display: block;
         margin-right: 30px;
@@ -112,7 +119,7 @@ div#menu {
         right: 0;
         background-color: #23232e;
         width: 50vw;
-        height: 92vh;
+        height: 90.6vh;
         margin-right: 0;
         flex-direction: column;
         align-items: center;
